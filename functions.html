@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+     <script>
+//function declaration
+function display1(){
+    console.log("Hello,Alice(function Declaration)");
+}
+//function expression 
+let display2=function(){
+    console.log("Hello,Bob(FunctionExpresiion"); 
+}
+//arrow functions
+let display3=()=>{
+    console.log("Hello,Charlie(Arrow Function)");
+}
+let display4= new function(){
+    console.log("Hello,Dave(Function Constructor)")
+}
+
+     </script>
+</head>
+<body>
+    <h2>Demo for two stages of functions</h2>
+    <h4>Defini functions</h4>
+    <div>
+        <button type="button" onclick="display11()">Function Declaration</button>
+    </div>
+    <div>
+        <button type="button" onclick="display2()">Function Expression</button>
+    </div>
+    <div>
+        <button type="button" onclick="display3()">arrow Function</button>
+    </div>
+    <div>
+        <button type="button" onclick="display4()">Function Constructor</button>
+    </div>
+</body>
+</html>

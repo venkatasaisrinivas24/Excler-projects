@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Application Form</title>
+    <link  href="googlesheet.js">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #bcb2b2;
+            margin-top: 100px;
+            padding: 39; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            background-image: url(https://cdn.pixabay.com/photo/2015/12/03/08/50/paper-1074131_640.jpg);
+                    
+        }
+        .form-container {
+            max-width: 70%;
+            width: 100%;
+            background-color: #3ed8ec;
+            padding: 20px;
+            border: 3px solid black;
+            border-radius: 8px;
+            border-color: black;
+            background-image: url(https://cdn.pixabay.com/photo/2015/12/03/08/50/paper-1074131_640.jpg);
+        }
+        table {
+            width: 100%;
+        }
+        td {
+            padding: 8px;
+        }
+       
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        
+        button {
+            padding: 10px 20px;
+             background-color: #e8dfe0;
+            cursor: pointer;
+        }
+        h1{
+           
+            text-align: center;
+            
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Application Form</h1>
+        <form action=" " method="post">
+            <table>
+                <tr>
+                    <td><label for="title">Title :</label></td>
+                    <td>:</td>
+                    <td>
+                        <select id="title" name="title">
+                            <option >--select--</option>
+                            <option value="mr">Mr</option>
+                            <option value="mrs">Mrs</option>
+                            <option value="ms">Ms</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male"/>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female"/>
+                        <label for="female">Female</label>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="dob">DOB (XX/MM/YYYY):</label></td>
+                    <td>:</td>
+                    <td><input type="date" id="dob" name="dob"></td>
+                </tr>
+                <tr>
+                    <td><label for="first-name">First Name:</label></td>
+                    <td>:</td>
+                    <td><input type="text" id="first-name" name="first-name"></td>
+                </tr>
+                <tr>
+                    <td><label for="middle-name">Middle Name:</label></td>
+                    <td>:</td>
+                    <td><input type="text" id="middle-name" name="middle-name"></td>
+                </tr>
+                <tr>
+                    <td><label for="last-name">Last Name:</label></td>
+                    <td>:</td>
+                    <td><input type="text" id="last-name" name="last-name"></td>
+                </tr>
+                <tr>
+                    <td><label for="mobile">Mobile Number:</label></td>
+                    <td>:</td>
+                    <td><input type="text" id="mobile" name="mobile"></td>
+                </tr>
+                <tr>
+                    <td><label for="alternate">Alternate Number:</label></td>
+                    <td>:</td>
+                    <td><input type="text" id="alternate" name="alternate"></td>
+                </tr>
+                <tr>
+                    <td><label for="land">Land Number:</label></td>
+                    <td>:</td>
+                    <td><input type="text" id="land" name="land"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td>:</td>
+                    <td><input type="email" id="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="aadhar">Aadhar ID:</label></td>
+                    <td>:</td>
+                    <td><input type="text" id="aadhar" name="aadhar"></td>
+                </tr>
+                <tr>
+                    <td><label for="pan">PAN Card:</label></td>
+                    <td>:</td>
+                    <td><input type="text" id="pan" name="pan"></td>
+                </tr>
+                <tr>
+                    <td><label for="education">Education:</label></td>
+                    <td>:</td>
+                    <td>
+                        <select id="education" name="education">
+                            <option >--select--</option>
+                            <option value="ssc">SSC</option>
+                            <option value="hsc">HSC</option>
+                            <option value="diploma">Diploma</option>
+                            <option value="bachelors">Bachelors</option>
+                            <option value="masters">Masters</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="father-name">Father Name:</label></td>
+                    <td>:</td>
+                    <td><input type="text" id="father-name" name="father-name"></td>
+                </tr>
+                <tr>
+                    <td><label for="father-occupation">Father Occupation:</label></td>
+                    <td>:</td>
+                    <td><input type="text" id="father-occupation" name="father-occupation"></td>
+                </tr>
+                <tr>
+                    <td><label for="mother-name">Mother Name:</label></td>
+                    <td>:</td>
+                    <td><input type="text" id="mother-name" name="mother-name"></td>
+                </tr>
+                <tr>
+                    <td><label for="mother-occupation">Mother Occupation:</label></td>
+                    <td>:</td>
+                    <td><input type="text" id="mother-occupation" name="mother-occupation"></td>
+                </tr>
+                <tr>
+                    <td>Siblings:</td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" id="younger" name="siblings" value="younger"/><label for="younger">Younger</label>
+                        <input type="radio" id="elder" name="siblings" value="elder"/><label for="elder">Elder</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button type="submit">Submit</button></td>
+                    
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

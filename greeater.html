@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+  <script>
+    function compare(){
+    
+        let num1=document.getElementById("n1").value;
+        let num2=document.getElementById("n2").value;
+        let output;
+        if(num1>num2){
+          output=`The ${num1} is greater than${num2}`;
+        }
+        else if(num2>num1){
+          output=`The ${num2} is greater${num1}`;
+        }
+        else{
+          output=`${num1} is equal ${num2}`;
+        }
+         
+        document.getElementById("head4").innerHTML=output;
+        }
+    function erase(){
+      let num1=document.getElementById("n1").value="";
+      let num2=document.getElementById("n2").value="";
+      document.getElementById("head4").innerHTML="";
+    }
+       
+    
+  </script>
+</head>
+<body>
+    <h1>Demo to greater than or not</h1>
+    <label for="n1">Enter First Number:</label>
+    <input type="text" id="n1">
+    <label for="n2">Enter Second Number</label>
+    <input type="text" id="n2">
+    <h4 id="head4"></h4>
+    <button type="button" onclick="compare()">COmpare</button>
+    <button type="button" onclick="erase()">Clear</button>
+</body>
+</html>
